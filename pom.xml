@@ -8,6 +8,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
+        <module>dubbo-tester-telnet</module>
         <module>dubbo-tester-service</module>
         <module>dubbo-tester-web</module>
     </modules>
