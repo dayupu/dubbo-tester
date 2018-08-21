@@ -1,7 +1,8 @@
 package org.dayup.fun.dt.telnet;
 
 import com.alee.laf.WebLookAndFeel;
-import org.dayup.fun.dt.telnet.view.IndexView;
+import com.alee.managers.notification.NotificationManager;
+import org.dayup.fun.dt.telnet.view.HomeView;
 import javax.swing.UIManager;
 import javax.swing.plaf.FontUIResource;
 import java.awt.EventQueue;
@@ -18,8 +19,9 @@ public class Launcher {
                 UIManager.setLookAndFeel(new WebLookAndFeel());
                 WebLookAndFeel.setDecorateDialogs(true);
                 WebLookAndFeel.setDecorateFrames(true);
-//                StyleManager.setSkin(DarkSkin.class);
-                new IndexView().init();
+                NotificationManager.setLocation(4);
+                NotificationManager.setMargin(20);
+                new HomeView().init();
             } catch (Exception e) {
                 e.printStackTrace();
             }
