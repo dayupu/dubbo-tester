@@ -11,6 +11,7 @@
         <module>dubbo-tester-telnet</module>
         <module>dubbo-tester-service</module>
         <module>dubbo-tester-web</module>
+        <module>dubbo-client</module>
     </modules>
 
     <dependencyManagement>

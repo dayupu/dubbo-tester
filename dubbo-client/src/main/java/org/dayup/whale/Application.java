@@ -1,8 +1,9 @@
-package org.dayup.fun.dt.telnet;
+package org.dayup.whale;
 
 import com.alee.laf.WebLookAndFeel;
 import com.alee.managers.notification.NotificationManager;
-import org.dayup.fun.dt.telnet.layout.MainView;
+import org.dayup.whale.expert.WhaleBuilder;
+import org.dayup.whale.view.MainView;
 
 import javax.swing.UIManager;
 import javax.swing.plaf.FontUIResource;
@@ -10,7 +11,7 @@ import java.awt.EventQueue;
 import java.awt.Font;
 import java.util.Enumeration;
 
-public class Launcher {
+public class Application {
 
 
     public static void main(String[] args) throws InterruptedException {
@@ -22,8 +23,7 @@ public class Launcher {
                 WebLookAndFeel.setDecorateFrames(true);
                 NotificationManager.setLocation(4);
                 NotificationManager.setMargin(20);
-//                new HomeView().init();
-                new MainView().init();
+                WhaleBuilder.buildView(MainView.class).show();
             } catch (Exception e) {
                 e.printStackTrace();
             }
