@@ -1,4 +1,4 @@
-package org.dayup.whale.exceptions;
+package org.dayup.fish.exceptions;
 
 public class BeatException extends RuntimeException {
 

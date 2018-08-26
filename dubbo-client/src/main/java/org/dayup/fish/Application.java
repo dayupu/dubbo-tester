@@ -1,9 +1,8 @@
-package org.dayup.whale;
+package org.dayup.fish;
 
 import com.alee.laf.WebLookAndFeel;
 import com.alee.managers.notification.NotificationManager;
-import org.dayup.whale.expert.WhaleBuilder;
-import org.dayup.whale.view.MainView;
+import org.dayup.fish.view.MainView;
 
 import javax.swing.UIManager;
 import javax.swing.plaf.FontUIResource;
@@ -20,10 +19,10 @@ public class Application {
                 InitGlobalFont();
                 UIManager.setLookAndFeel(new WebLookAndFeel());
                 WebLookAndFeel.setDecorateDialogs(true);
-                WebLookAndFeel.setDecorateFrames(true);
+//                WebLookAndFeel.setDecorateFrames(true);
                 NotificationManager.setLocation(4);
                 NotificationManager.setMargin(20);
-                WhaleBuilder.buildView(MainView.class).show();
+                new MainView().build();
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -32,7 +31,7 @@ public class Application {
 
 
     private static void InitGlobalFont() {
-        Font font = new Font("宋体", Font.PLAIN, 14);
+        Font font = new Font("Microsoft YaHei", Font.PLAIN, 14);
         FontUIResource fontRes = new FontUIResource(font);
         for (Enumeration<Object> keys = UIManager.getDefaults().keys();
              keys.hasMoreElements(); ) {

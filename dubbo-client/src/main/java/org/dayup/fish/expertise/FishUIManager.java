@@ -1,18 +1,19 @@
-package org.dayup.whale.expert;
+package org.dayup.fish.expertise;
 
 import com.alee.laf.rootpane.WebFrame;
 
-public class ViewManager {
+public class FishUIManager {
 
     private static WebFrame container;
 
-    protected void initContainer(WebFrame frame) {
+    public static void setContainer(WebFrame frame) {
         if (container == null) {
             container = frame;
         }
     }
 
-    protected static WebFrame getContainer() {
+    public static WebFrame getContainer() {
         return container;
     }
+
 }
