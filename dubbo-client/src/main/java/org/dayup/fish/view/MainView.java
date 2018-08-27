@@ -3,8 +3,8 @@ package org.dayup.fish.view;
 import com.alee.extended.panel.GroupPanel;
 import com.alee.extended.panel.GroupingType;
 import com.alee.laf.rootpane.WebFrame;
-import org.dayup.fish.expertise.FishUIManager;
-import org.dayup.fish.expertise.statement.FishViewBase;
+import org.dayup.fish.supplier.FishUIManager;
+import org.dayup.fish.supplier.statement.FishViewBase;
 import org.dayup.fish.view.assembly.FishBodyPanel;
 import org.dayup.fish.view.assembly.FishTopPanel;
 

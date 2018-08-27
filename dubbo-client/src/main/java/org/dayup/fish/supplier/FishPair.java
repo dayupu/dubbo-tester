@@ -1,4 +1,4 @@
-package org.dayup.fish.expertise;
+package org.dayup.fish.supplier;
 
 public class FishPair<L, R> {
 

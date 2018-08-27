@@ -1,4 +1,4 @@
-package org.dayup.fish.expertise.style;
+package org.dayup.fish.supplier.style;
 
 import java.awt.Font;
 

@@ -1,4 +1,4 @@
-package org.dayup.fish.expertise.custom.panel;
+package org.dayup.fish.supplier.component.panel;
 
 import com.alee.extended.panel.GroupPanel;
 import com.alee.extended.panel.GroupingType;

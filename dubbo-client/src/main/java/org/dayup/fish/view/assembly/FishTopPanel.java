@@ -3,8 +3,8 @@ package org.dayup.fish.view.assembly;
 import com.alee.extended.panel.GroupPanel;
 import com.alee.laf.button.WebButton;
 import com.alee.laf.panel.WebPanel;
-import org.dayup.fish.expertise.custom.enums.FishImage;
-import org.dayup.fish.expertise.style.FishColor;
+import org.dayup.fish.supplier.component.enums.FishImage;
+import org.dayup.fish.supplier.style.FishColor;
 import org.dayup.fish.utils.Messages;
 import org.dayup.fish.view.provider.ProviderAddView;
 

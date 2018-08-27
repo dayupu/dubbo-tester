@@ -1,6 +1,6 @@
 package org.dayup.fish.view.provider;
 
-import org.dayup.fish.expertise.statement.IControl;
+import org.dayup.fish.supplier.statement.IControl;
 
 public class ProviderAddControl implements IControl {
 

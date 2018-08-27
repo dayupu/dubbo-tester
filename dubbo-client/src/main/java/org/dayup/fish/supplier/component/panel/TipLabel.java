@@ -1,4 +1,4 @@
-package org.dayup.fish.expertise.custom.panel;
+package org.dayup.fish.supplier.component.panel;
 
 import com.alee.laf.label.WebLabel;
 

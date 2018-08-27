@@ -6,6 +6,9 @@ import com.alee.laf.panel.WebPanel;
 import com.alee.laf.scroll.WebScrollPane;
 import com.alee.laf.splitpane.WebSplitPane;
 import com.alee.laf.tree.WebTree;
+import com.alee.laf.tree.WebTreeModel;
+import org.dayup.fish.supplier.component.tree.DuNode;
+import org.dayup.fish.supplier.component.tree.DuNodeType;
 
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
@@ -55,6 +58,13 @@ public class FishBodyPanel extends WebSplitPane {
 
     private WebScrollPane createTree() {
         WebTree tree = new WebTree();
+
+        DuNode root = new DuNode(DuNodeType.TITLE, "xxx");
+        DuNode node1 = new DuNode(DuNodeType.TITLE, "xxx1");
+        DuNode node10 = new DuNode(DuNodeType.TITLE, "xxx2");
+        node1.add(node10);
+        root.add(node1);
+        tree.setModel(new WebTreeModel<DuNode>(root));
         tree.setSelectionMode(WebTree.DISCONTIGUOUS_TREE_SELECTION);
         tree.addTreeSelectionListener(new TreeSelectionListener() {
             @Override
@@ -69,7 +79,9 @@ public class FishBodyPanel extends WebSplitPane {
                 if (e.getSource() == tree && e.getClickCount() == 2) {
                     TreePath treePath = tree.getPathForLocation(e.getX(), e.getY());
                     if (treePath != null) {
-                        System.out.println(treePath.getLastPathComponent());
+                        DuNode node = (DuNode)treePath.getLastPathComponent();
+                        System.out.println(node.getType());
+                        System.out.println(node);
                     }
                 }
             }

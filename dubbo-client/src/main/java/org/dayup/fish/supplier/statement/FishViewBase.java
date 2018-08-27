@@ -1,4 +1,4 @@
-package org.dayup.fish.expertise.statement;
+package org.dayup.fish.supplier.statement;
 
 import org.dayup.fish.utils.Messages;
 

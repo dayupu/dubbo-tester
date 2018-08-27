@@ -1,4 +1,4 @@
-package org.dayup.fish.expertise.custom.enums;
+package org.dayup.fish.supplier.component.enums;
 
 import org.dayup.fish.support.cache.ImageIconCache;
 

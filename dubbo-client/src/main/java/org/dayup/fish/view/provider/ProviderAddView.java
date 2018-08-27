@@ -7,12 +7,12 @@ import com.alee.laf.panel.WebPanel;
 import com.alee.laf.rootpane.WebDialog;
 import com.alee.laf.text.WebTextField;
 import com.alee.managers.notification.NotificationManager;
-import org.dayup.fish.expertise.FishUIManager;
-import org.dayup.fish.expertise.custom.enums.FishImage;
-import org.dayup.fish.expertise.custom.panel.DialogPanel;
-import org.dayup.fish.expertise.custom.panel.PlusPanel;
-import org.dayup.fish.expertise.custom.panel.TipLabel;
-import org.dayup.fish.expertise.statement.FishViewBase;
+import org.dayup.fish.supplier.FishUIManager;
+import org.dayup.fish.supplier.component.enums.FishImage;
+import org.dayup.fish.supplier.component.panel.DialogPanel;
+import org.dayup.fish.supplier.component.panel.PlusPanel;
+import org.dayup.fish.supplier.component.panel.TipLabel;
+import org.dayup.fish.supplier.statement.FishViewBase;
 import org.dayup.fish.support.FishValidator;
 
 import java.awt.event.ActionEvent;
